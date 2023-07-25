@@ -5,8 +5,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #6495ed;
+html {
+   width: 100%;
+  
+}
+
+body { 
+    background-image: linear-gradient(#000, #fff);
+}
+
+h1 {
+   text-align: center;
+   font-size: 3rem;
+   color: #fff;
+   margin-top: 0.5rem;
+   font-weight: 900;
 }
 
 main {
@@ -18,15 +31,17 @@ main {
 }
  
 .clock {
-    width: 600px;
-    height: 600px;
+   min-width: 600px;
+    min-height: 600px;
     background-color: #f0f8ff;
     border-radius: 50%;
-    border: 15px solid #333;
+    border: 15px solid #fff;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url("../imagens/escudo-2.jpg") no-repeat center center;
+    background-size: cover;
  }
 
  .number {
@@ -37,52 +52,85 @@ main {
     height: 100%;
     text-align: center;
     padding: 5px; 
+    color: #fff;
  }
 
  .number-1 {
-    transform: rotate(00deg);
- }
-
- .number-2 {
     transform: rotate(30deg);
  }
 
- .number-3 {
+ .number-2 {
     transform: rotate(60deg);
  }
- .number-4 {
+
+ .number-3 {
     transform: rotate(90deg);
  }
- .number-5 {
+ .number-4 {
     transform: rotate(120deg);
  }
- .number-6 {
+ .number-5 {
     transform: rotate(150deg);
  }
- .number-7 {
+ .number-6 {
     transform: rotate(180deg);
  }
- .number-8 {
+ .number-7 {
     transform: rotate(210deg);
  }
- .number-9 {
+ .number-8 {
     transform: rotate(240deg);
  }
- .number-10 {
+ .number-9 {
     transform: rotate(270deg);
  }
- .number-11 {
+ .number-10 {
     transform: rotate(300deg);
  }
- .number-12 {
+ .number-11 {
     transform: rotate(330deg);
+ }
+ .number-12 {
+    transform: rotate(360deg);
  }
 
  .second-hand {
     width: 5px;
     height: 240px;
     background-color: brown;
+    box-shadow: 1px 5px 5px #ce0f0f;
     position: absolute;
     border-radius: 5px;
     transform: translate(0,-50%);
+    transform-origin: bottom center;
  }
+
+ .minute-hand {
+   width: 8px;
+   height: 200px;
+   background-color:#000;
+   position: absolute;
+   border-radius: 5px;
+   transform: translate(0,-50%);
+   transform-origin: bottom center;
+ }
+
+ .hour-hand {
+   width: 13px;
+   height: 150px;
+   background-color:#000;
+   
+   position: absolute;
+   border-radius: 13px;
+   transform: translate(0,-50%);
+   transform-origin: bottom center;
+ }
+
+ .center {
+   width: 20px;
+   height: 20px;
+   border-radius: 20px;
+   background-color: brown;
+   position: absolute;
+ }
+
